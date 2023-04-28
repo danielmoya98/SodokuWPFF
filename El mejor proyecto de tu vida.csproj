@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>El_mejor_proyecto_de_tu_vida</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="imagenes\fondo.jpg" />
+    <None Remove="imagenes\R.jpeg" />
+    <None Remove="imagenes\sor1.wav" />
+    <None Remove="NewFolder1\R.jpeg" />
+    <None Remove="NewFolder1\usuario-registrado.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="imagenes\sor1.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="imagenes\fondo.jpg" />
+    <Resource Include="imagenes\R.jpeg" />
+    <Resource Include="NewFolder1\R.jpeg" />
+    <Resource Include="imagenes\usuario-registrado.jpg" />
+  </ItemGroup>
+
+</Project>

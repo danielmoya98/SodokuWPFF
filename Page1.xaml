@@ -1,0 +1,227 @@
+﻿<Page x:Class="El_mejor_proyecto_de_tu_vida.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:El_mejor_proyecto_de_tu_vida"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="Page1">
+
+    <Grid Height="1920" Background="{StaticResource FondoBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <MediaElement Height="768" 
+                      Stretch="Uniform" 
+                      Name="ReproductorDePrueba" 
+                      FlowDirection="LeftToRight" 
+                      LoadedBehavior="Manual" 
+                      Margin="35,584,35,568" />
+
+
+        <Button  Name="btn_inipar" 
+                 Content="INICIAR PARTIDA" 
+                 HorizontalContentAlignment="Center" 
+                 FontSize="30" 
+                 FontStyle="Italic"  
+                 HorizontalAlignment="Left"
+                 Margin="563,336,0,0" 
+                 VerticalAlignment="Top" 
+                 Height="70" 
+                 Width="312" 
+                 Background="Transparent" 
+                 BorderThickness="0" 
+                 BorderBrush="Transparent" 
+                 FontFamily="Strike Fighter" 
+                 Foreground="White" Click="btn_inipar_Click"/>
+
+
+        <Button  Name="btn_salir"  
+                 Content="SALIR" 
+                 FontSize="30" 
+                 FontStyle="Italic" 
+                 HorizontalContentAlignment="Center" 
+                 HorizontalAlignment="Left" 
+                 Margin="564,426,0,0" 
+                 VerticalAlignment="Top" 
+                 Height="70" 
+                 Width="312" 
+                 Background="Transparent" 
+                 BorderThickness="0" 
+                 BorderBrush="Transparent"  
+                 FontFamily="Strike Fighter" 
+                 Foreground="White" Click="btn_salir_Click"/>
+
+        <Rectangle HorizontalAlignment="Left" 
+                   Margin="160,63,0,0" 
+                   Stroke="Transparent"
+                   Width="74"
+                   Height="56" 
+                   VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="imagenes/R.jpeg"></ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+
+        <!--BOTONES DE DIFICULTAD-->
+
+
+        <Label x:Name="titulo" 
+               Content="SODOKU ULTIMATE" 
+               HorizontalContentAlignment="Center" 
+               FontSize="80" 
+               FontStyle="Italic"  
+               HorizontalAlignment="Left" 
+               Margin="210,242,0,0" 
+               VerticalAlignment="Top" 
+               Height="94" 
+               Width="1018" 
+               Background="Transparent" 
+               BorderThickness="0" 
+               BorderBrush="Transparent" 
+               FontFamily="Strike Fighter" 
+               Foreground="White"  />
+
+        <Button x:Name="btn_dif_facil"  
+                Visibility="Hidden" 
+                Content="FACIL" 
+                FontSize="30" 
+                FontStyle="Italic"
+                HorizontalContentAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="564,412,0,0"
+                VerticalAlignment="Top" 
+                Height="70" 
+                Width="312" 
+                Background="Transparent" 
+                BorderThickness="0" 
+                BorderBrush="Transparent" 
+                FontFamily="Strike Fighter" 
+                Foreground="White" 
+                 />
+        <Button x:Name="btn_dif_nor"   
+                Visibility="Hidden" 
+                Content="NORMAL" 
+                FontSize="30" 
+                FontStyle="Italic" 
+                HorizontalContentAlignment="Center" 
+                HorizontalAlignment="Left" 
+                Margin="562,484,0,0" 
+                VerticalAlignment="Top" 
+                Height="70" Width="312" 
+                Background="Transparent" 
+                BorderThickness="0" 
+                BorderBrush="Transparent" 
+                FontFamily="Strike Fighter" 
+                Foreground="White" 
+                  />
+        <Button x:Name="btn_dif_post"   
+                Visibility="Hidden" 
+                Content="POST-HUMAN" 
+                FontSize="30" 
+                FontStyle="Italic" 
+                HorizontalContentAlignment="Center"
+                HorizontalAlignment="Left" 
+                Margin="564,558,0,0" 
+                VerticalAlignment="Top"
+                Height="70" 
+                Width="312" 
+                Background="Transparent" 
+                BorderThickness="0" 
+                BorderBrush="Transparent" 
+                FontFamily="Strike Fighter"  
+                Foreground="White" 
+                />
+
+        <Label  x:Name="lbl_dificultad" 
+                Visibility="Hidden"
+            Content="DIFICULTAD" 
+            FontSize="30" 
+            FontStyle="Italic" 
+            HorizontalContentAlignment="Center" 
+            HorizontalAlignment="Left" 
+            Margin="563,350,0,0" 
+            VerticalAlignment="Top" 
+            Height="70" 
+            Width="312" 
+            Background="Transparent" 
+            BorderThickness="0" 
+            BorderBrush="Transparent" 
+            FontFamily="Strike Fighter" 
+            Foreground="White"/>
+
+        <Label x:Name="btn_opc_oscuro"  
+                Visibility="Hidden" 
+                Content="MODO OSCURO :" 
+                FontSize="30" 
+                FontStyle="Italic"
+                HorizontalContentAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="564,412,0,0"
+                VerticalAlignment="Top" 
+                Height="70" 
+                Width="312" 
+                Background="Transparent" 
+                BorderThickness="0" 
+                BorderBrush="Transparent" 
+                FontFamily="Strike Fighter" 
+                Foreground="White" 
+                 />
+        <CheckBox Name="checkbox" 
+                  Content="" 
+                  Visibility="Hidden"
+                  HorizontalAlignment="Left" 
+                  Height="17" 
+                  Margin="884,426,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="19"/>
+
+        <!-- <Label x:Name="btn_opc_hud"   
+                Visibility="Hidden" 
+                Content="MOSTRAR HUD :" 
+                FontSize="30" 
+                FontStyle="Italic" 
+                HorizontalContentAlignment="Center" 
+                HorizontalAlignment="Left" 
+                Margin="154,52,0,0" 
+                VerticalAlignment="Top" 
+                Height="70" Width="312" 
+                Background="Transparent" 
+                BorderThickness="0" 
+                BorderBrush="Transparent" 
+                FontFamily="Strike Fighter" 
+                Foreground="White" Grid.Column="1" Grid.Row="1" 
+                  />
+        <Label x:Name="btn_opc_univalle"   
+                Visibility="Hidden" 
+                Content="MODO UNIVALLE :" 
+                FontSize="30" 
+                FontStyle="Italic" 
+                HorizontalContentAlignment="Center"
+                HorizontalAlignment="Left" 
+                Margin="156,126,0,0" 
+                VerticalAlignment="Top"
+                Height="70" 
+                Width="312" 
+                Background="Transparent" 
+                BorderThickness="0" 
+                BorderBrush="Transparent" 
+                FontFamily="Strike Fighter"  
+                Foreground="White" 
+                Grid.Row="1" 
+                Grid.Column="1" 
+                />
+-->
+        <Frame Visibility="Hidden" Name="frame"  NavigationUIVisibility="Hidden" Width="1366" Height="768" Margin="0,0,0,1152"/>
+
+    </Grid>
+</Page>

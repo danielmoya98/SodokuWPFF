@@ -1,0 +1,12 @@
+﻿<Application x:Class="El_mejor_proyecto_de_tu_vida.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:El_mejor_proyecto_de_tu_vida"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ImageBrush x:Key="FondoBrush" ImageSource="imagenes/fondo.jpg"/>
+    </Application.Resources>
+    
+    
+    
+</Application>
